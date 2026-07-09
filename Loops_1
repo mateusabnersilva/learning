@@ -1,0 +1,16 @@
+#break and cotinue 
+
+dev_names = ['Jess', 'Naomi', 'Tom']
+
+for developer in dev_names:
+    if developer == 'Naomi':
+        break # Usado para parar a execução em loop
+    print(developer)
+
+dev_names = ['Jess', 'Naomi', 'Tom']
+
+for developer in dev_names:
+    if developer == 'Naomi':
+        continue
+    print(developer)
+

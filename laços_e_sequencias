@@ -1,0 +1,110 @@
+cities = ['Tokio', 'Los Santos', 'Currais Novos', 'Broklin']
+cities[0]
+print(cities[0]) # Broklin
+print(len(cities))
+
+developer = 'Jessica'
+print(list(developer)) # ['J', 'e', 's', 's', 'i', 'c', 'a']
+
+
+number = [1, 2, 3, 4, 5]
+print(len(number))
+
+languages = ['Python', 'Java', 'C++', 'Rust']
+languages[0] = 'Javascript'
+print(languages) # Perceba, se for além do número da lista ele devolverá 'IndexERROR'
+
+dev = ['Jane Doe', 27, 'Python Developer']
+del dev[1] #Deleta algum termo da lista depedendo do número e quantidade da variável
+print(dev)
+
+# termo in = verifica se o termo está na lista 
+lang = ['Python', 'Java', 'C++', 'Rust']
+
+print('Rust' in lang)
+print('Javascript' in lang)
+
+deve = ['Alice', 25, ['Python', 'Rust', 'C++']]
+print(deve[2][1]) # Rust. Aqui, acessamos a segunda lista a partir da numeração 0 = Alice 1 = 25.
+
+# Desempacotar valores
+developer_prog = ['Alice', 34, 'Rust Developer']
+name, age, job = developer_prog
+
+print(name) # ALice
+print(age) # 34
+print(job) # 'Rust Developer'
+
+person = ['Alice', 34, 'Rust Developer']
+name, *rest = person # Rasterisco serve para colocar as informações restantes numa linha só.
+
+print(name)
+print(rest)
+
+
+# Operador slice ( : )
+desserts = ['Cake', 'Cookies', 'Ice Cream', 'Pie', ' Brownies']
+print(desserts[1:4])
+
+numbers = [1, 2, 3, 4, 5, 6]
+print(numbers[1::2]) # [2, 4, 6], :: quer dizer de dois em dois 
+
+# Métodos append(), pop(), sort()
+
+num = [1, 2, 3, 4, 5]
+num.append(6) #Acrescenta o número 6
+print(num)
+
+numb = [1, 2, 3, 4, 5]
+even_numb = [6, 8, 10]
+
+numb.append(even_numb) # Acrescenta na lista outra lista
+print(numb)
+
+numb = [1, 2, 3, 4, 5]
+even_numb = [6, 8, 10]
+
+numb.extend(even_numb) # extend(): acrescenta todos numa lista só
+print(numb) # [1, 2, 3, 4, 5, 6, 8, 10]
+
+numb1 = [1, 2, 3, 4, 5]
+numb1.insert(2, 2.5) # insert(): aceita dois argumentos
+
+print(numb1)
+
+numbers1 = [10, 20, 30, 40, 50]
+numbers1.remove(50) # Ele removerá somente o 50 uma única vez
+
+print(numbers1)
+
+plump = [1, 2, 3, 4, 5]
+print(plump.pop(1)) # Remove um índice específico da lista 
+# The number 2 is returned
+
+plump = [1, 2, 3, 4, 5]
+print(plump.pop()) # Sem especificar o elemento, o último será removido
+
+plump = [1, 2, 3, 4, 5]
+plump.clear() # Limpa a lista, deixando-a vazia.
+print(plump) # []
+
+numbers = [1, 2, 19, 35, 1, 67, 41]
+numbers.sort() # Organiza de forma crescente 
+print(numbers)
+
+numbers = [6, 5, 4, 3, 2, 1]
+numbers.reverse() # Reverte a ordem da lista.
+print(numbers)
+
+languages = ['Rust', 'Java', 'Python', 'C++']
+print(languages.index('Java')) # Usado para encontrar o primeiro índice 
+# Se ele não for encontado o python manda 'ValueError'
+
+numbers = (13, 2, 78, 3, 45, 67, 18, 8)
+print(sorted(numbers)) 
+
+languages = ('Rust', 'Java', 'Python', 'C++','Rust', 'Python')
+print(sorted(languages, key=len))
+
+languages = ('Rust', 'Java', 'Python', 'C++','Rust', 'Python')
+print(sorted(languages, reverse=True))

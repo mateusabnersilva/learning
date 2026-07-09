@@ -1,0 +1,15 @@
+""" Range: Usada para gerar uma sequência de números inteiros.
+
+    range(start, stop, step), ele somente aceita números inteiros"""
+
+for num in range(1, 5): # Começa em 1 e termina em 4, pois o 'stop' não é inclusivo.
+    print(num)
+
+for num in range (2, 11, 2): # Começa do número 2 até o 10 em sequência par (de 2 em 2)
+    print(num)
+
+for num in range(40, 0, -10): # Em lógica, o número deve diminuir em 10 dem 10. 
+    print(num)
+
+numbers = list(range(2, 11, 2))
+print(numbers)

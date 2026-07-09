@@ -1,0 +1,31 @@
+# for, in
+
+languages = ['Rust', 'Java', 'Python', 'C++']
+
+for language in languages: # for : cria ou reutiliza uma variável na repetição
+    print(language) 
+
+for char in 'code': # imprime cada letra da palavra 'code': 'c', 'o', 'd', 'e'. 
+    print(char) 
+
+categories = ['Fruit', 'Vegetable'] # A primeira lista vai pecorrer a segunda lista.
+foods = ['Apple', 'Carrot', 'Banana']
+
+for category in categories:
+    for food in foods:
+        print(category, food)
+
+# while
+
+    #Jogo de adivinhação
+
+secret_number = 3
+guess = 0
+
+while guess != secret_number:
+    guess = int(input('Guess the number (1-5): '))
+    if guess != secret_number:
+        print('Wrong! Try again.')
+
+else:
+    print('You got it!')
