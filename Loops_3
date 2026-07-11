@@ -11,5 +11,70 @@ for num in range (2, 11, 2): # Começa do número 2 até o 10 em sequência par 
 for num in range(40, 0, -10): # Em lógica, o número deve diminuir em 10 dem 10. 
     print(num)
 
-numbers = list(range(2, 11, 2))
+numbers = list(range(2, 11, 2)) # Lista de inteiros
 print(numbers)
+
+languages = ['Spanish', 'English', 'Russian', 'Chinese']
+
+index = 0 # index = índice
+
+for language in languages:
+    print(f'Index {index} and language {language}')
+    index += 1
+
+languages = ['Spanish', 'English', 'Russian', 'Chinese']
+
+for index, language in enumerate(languages, 1):
+    print(f'Index {index} and language {language}')
+
+dev = ['naomi', 'dario', 'jessica', 'tom']
+ids = [1, 2, 3, 4]
+
+print(list(zip(dev, ids))) # list() : cria uma lista. zip() : emparelhar duas ou mais sequências
+
+
+
+developers = ['Naomi', 'Dario', 'Jessica', 'Tom']
+ids = [1, 2, 3, 4]
+
+for name, id in zip(developers, ids):
+    print(f'Name: {name}')
+    print(f'ID: {id}')   
+
+even_numbers = [num for num in range(21) if num % 2 == 0]
+print(even_numbers) 
+
+numbers = [1, 2, 3, 4, 5]
+result = [(num, 'Even') if num % 2 == 0 else (num, 'Odd') for num in numbers]
+print(result)
+
+
+
+words = ['tree', 'sky', 'mountain', 'river', 'cloud', 'sun']
+
+def is_long_word(word):
+    return len(word) > 4
+
+long_word = list(filter(is_long_word, words)) # Filter(): selecioa elementos de um itineravel que atendem uma condição específica.
+print(long_word)
+
+
+
+cel = [0, 10, 20, 30, 40]
+
+def to_fahrenheit(temp):
+    return (temp * 9/5) + 32
+
+fahrenheit = list(map(to_fahrenheit, cel)) 
+print(fahrenheit)
+
+# map(): aplica uma função a cada um dos seus elementos
+
+
+
+numbers = [5, 10, 15, 20]
+total = sum(numbers)
+print(total)
+
+# sum(): usada para obter a soma de um iterável como lista ou tupla
+

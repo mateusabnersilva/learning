@@ -1,0 +1,11 @@
+valor = int(input('Informe o valor da casa: '))
+salario = int(input('Informe o seu salário: '))
+tempo_de_pagamento = int(input('Informe em quantos anos pretende pagar: '))
+
+prestação_mensal = (valor / (tempo_de_pagamento * 12))
+limite = salario * 0.30
+
+if prestação_mensal <= limite:
+    print('Empréstimo aprovado')
+else:
+    print('Impréstimo negado')

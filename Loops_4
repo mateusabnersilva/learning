@@ -1,0 +1,14 @@
+"""
+# Funções Lambda
+
+def square(num):
+    return num ** 2
+
+print(square(4)) """
+
+numbers = [1, 2, 3, 4, 5]
+
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers) 
+
+# lambda(): função pequena e sem nome. Normalmente usadas em uma única expressão

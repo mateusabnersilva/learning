@@ -1,0 +1,15 @@
+# binário, octal, hexadecimal
+
+numero = int(input('Deposite um número: '))
+user = str(input('Escolha o método: Binário, Octal ou Hexa: \n'))
+
+
+if user == 'Binário':
+    print(bin(numero))
+elif user == 'Octal':
+    print(oct(numero))
+elif user == 'Hexa':
+    print(hex(numero))
+else:
+    print('Opção inválida. Tente novamente!')
+
