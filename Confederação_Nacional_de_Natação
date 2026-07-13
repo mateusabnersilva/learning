@@ -5,10 +5,10 @@ categoria = ano_atual - nascimento
 if categoria >= 1 and categoria <= 9:
     print(f'De acordo com sua idade: {categoria} anos, o candidato é Mirim')
 elif categoria >= 10 and categoria <= 14:
-    print('Infantil')
+    print(f'De acordo com sua idade: {categoria} anos, o candidato é Infantil')
 elif categoria >= 15 and categoria <= 19:
-    print('Junior')
+    print(f'De acordo com sua idade: {categoria} anos, o candidato é Junior')
 elif categoria == 20:
-    print('Sênior')
+    print(f'De acordo com sua idade: {categoria} anos, o candidato é Sênior')
 else:
-    print('Master')
+    print(f'De acordo com sua idade: {categoria} anos, o candidato é Master')

@@ -1,0 +1,25 @@
+print('{:=^40}'.format('LOJAS ATACADO'))
+
+produtos = float(input('Digite o valor total da sua compra: '))
+metodo = int(input('Escolha entre o método 1, 2, 3 ou 4: '))
+
+if metodo == 1:
+    valor_final = produtos - (produtos * 10 / 100)
+    print('MÉTODO ESCOLHIDO: DINHEIRO OU CHEQUE')
+    print(f'VAlOR FINAL: ${valor_final}')
+elif metodo == 2:
+    valor_final = produtos - (produtos * 5 / 100)
+    print('MÉTODO ESCOLHIDO: CARTÃO')
+    print(f'VALOR FINAL: ${valor_final}')
+elif metodo == 3:
+    parcelado = int(input('EM ATÉ 2x NO CARTÃO: '))
+    valor_final = produtos / parcelado
+    print(f'MÉTODO ESCOLHIDO: CARTÃO PARCELADO EM {parcelado}x')
+    print(f'VALOR FINAL: {parcelado}x de ${valor_final}')
+elif metodo == 4:
+    parcelado = int(input('3X OU MAIS NO CARTÃO: '))
+    valor_final = ((produtos * 1.20) / parcelado)
+    print(f'MÉTODO ESCOLHIDO: CARTÃO PARCELADO EM {parcelado}x: ')
+    print(f'VALOR FINAL: {parcelado}x de ${valor_final}')
+else:
+    print('ERROR. VOLTE PARA O MENU INICIAL E TENTE NOVAMENTE.')
