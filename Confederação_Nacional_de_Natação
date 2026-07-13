@@ -1,0 +1,14 @@
+ano_atual = int(input('Digite o ano vigente: '))
+nascimento = int(input('Digite seu ano de nascimento: '))
+categoria = ano_atual - nascimento
+
+if categoria >= 1 and categoria <= 9:
+    print(f'De acordo com sua idade: {categoria} anos, o candidato é Mirim')
+elif categoria >= 10 and categoria <= 14:
+    print('Infantil')
+elif categoria >= 15 and categoria <= 19:
+    print('Junior')
+elif categoria == 20:
+    print('Sênior')
+else:
+    print('Master')

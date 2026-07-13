@@ -1,0 +1,15 @@
+
+nascimento = int(input('Informe o ano de nascimento: '))
+ano = int(input('Digite o ano vigente: '))
+idade = ano - nascimento
+
+if idade < 18:
+    falta = 18 - idade
+    print(f'Faltam {falta} para o alistamento')
+
+elif idade == 18:
+    print('Obrigatório fazer o alistamento militar!')
+    
+else:
+    passou = idade - 18
+    print(f'Você está {passou} anos atrasado.')
