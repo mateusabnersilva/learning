@@ -1,40 +1,41 @@
-from random import randint
-from time import sleep
+from random import randint #Escolha aleatória
+from time import sleep # Atrasa alguns comandos deixando fluido
 
 print('{:=^40}'.format(' LETS PLAY JOKENPO '))
 
-itens = ('pedra','papel','tesoura')
-computador = randint(0 , 2)
-print()
+itens = ('pedra','papel','tesoura') # lista do 0 ao 2
+computador = randint(0 , 2) # Ele vai ler 0 = pedra, 1 = papel e 2 = tesoura
+print() #Espaço entre linhas
 print('''
 [0] Pedra
 [1] Papel
-[2] Tesoura ''')
+[2] Tesoura ''') # IMPRIME NO TERMINAL: PEDRA, PAPEL OU TESOURA. VISUALIZAÇÃO DO JOGADOR.
 print()
 jogador = int(input('Escolha uma opção: '))
 
+#Abertura do jogo
 print('JO')
 sleep(1)
 print('                                 KEN')
 sleep(1)
 print('               PO')
 
-if computador == 0:
+if computador == 0: # COMPUTADOR ESCOLHEU PEDRA
 
-    if jogador == 0:
+    if jogador == 0: # JOGADOR ESCOLHEU PEDRA
         print('Empate')
         print('Eu escolhi Pedra e você escolheu Pedra')
 
-    elif jogador == 1:
+    elif jogador == 1: # JOGADOR ESCOLHEU PAPEL
         print('Você ganhou!')
         print('Eu escolhi Pedra e você escolheu Papel')
 
-    elif jogador == 2:
+    elif jogador == 2: # JOGADOR ESCOLHEU TESOURA
         print('Você perdeu!')
         print('Eu escolhi Pedra e você Tesoura')
 
     else:
-        print('Jogada Inválida.')
+        print('Jogada Inválida.') # DIGITO ERRADO IMPRIME ESSA MENSAGEM
 
 elif computador == 1: 
 
@@ -50,7 +51,7 @@ elif computador == 1:
         print('Você ganhou!')
         print('Eu escolhi Papel e você escolheu Tesoura')
     else:
-        print('Jogada Inválida')
+        print('Jogada Inválida') 
 
 elif computador == 2:
 
