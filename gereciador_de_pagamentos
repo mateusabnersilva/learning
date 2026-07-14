@@ -4,22 +4,22 @@ produtos = float(input('Digite o valor total da sua compra: '))
 metodo = int(input('Escolha entre o método 1, 2, 3 ou 4: '))
 
 if metodo == 1:
-    valor_final = produtos - (produtos * 10 / 100)
+    valor_final = produtos - (produtos * 10 / 100) # Trata-se de desconto: 10%. Valor total - desconto
     print('MÉTODO ESCOLHIDO: DINHEIRO OU CHEQUE')
     print(f'VAlOR FINAL: ${valor_final}')
 elif metodo == 2:
-    valor_final = produtos - (produtos * 5 / 100)
+    valor_final = produtos - (produtos * 5 / 100) # Trata-se de desconto: 5%. Valor total - desconto
     print('MÉTODO ESCOLHIDO: CARTÃO')
     print(f'VALOR FINAL: ${valor_final}')
 elif metodo == 3:
-    parcelado = int(input('EM ATÉ 2x NO CARTÃO: '))
+    parcelado = int(input('EM ATÉ 2x NO CARTÃO: ')) # Aqui o usuário pode escolher em quantas parcelas pode colocar
     valor_final = produtos / parcelado
     print(f'MÉTODO ESCOLHIDO: CARTÃO PARCELADO EM {parcelado}x')
     print(f'VALOR FINAL: {parcelado}x de ${valor_final}')
 elif metodo == 4:
-    parcelado = int(input('3X OU MAIS NO CARTÃO: '))
-    valor_final = ((produtos * 1.20) / parcelado)
+    parcelado = int(input('3X OU MAIS NO CARTÃO: ')) #Quantas parcelas podem escolher, apesar que levam um acrescimo de 20%
+    valor_final = ((produtos * 1.20) / parcelado) # valor da compra vezes 100% + 20% = 1.20 dividido por número de parcelas
     print(f'MÉTODO ESCOLHIDO: CARTÃO PARCELADO EM {parcelado}x: ')
-    print(f'VALOR FINAL: {parcelado}x de ${valor_final}')
+    print(f'VALOR FINAL: {parcelado}x de ${valor_final}') # O programa faz a devolução dos valores. Ou seja, {parcelado}: o usuário escolheu x parcelas. Então, no terminal aparecerá x parcelas. 
 else:
     print('ERROR. VOLTE PARA O MENU INICIAL E TENTE NOVAMENTE.')
