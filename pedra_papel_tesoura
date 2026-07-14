@@ -1,0 +1,8 @@
+print('{:=^40}'.format(' LETS PLAY JOKENPO '))
+
+print('''
+[1] Pedra
+[2] Papel
+[3] Tesoura ''')
+      
+jogador = 1
