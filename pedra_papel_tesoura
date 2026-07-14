@@ -1,8 +1,63 @@
+from random import randint
+
 print('{:=^40}'.format(' LETS PLAY JOKENPO '))
 
+itens = ('pedra','papel','tesoura')
+computador = randint(0 , 2)
+print()
 print('''
-[1] Pedra
-[2] Papel
-[3] Tesoura ''')
-      
-jogador = 1
+[0] Pedra
+[1] Papel
+[2] Tesoura ''')
+print()
+jogador = int(input('Escolha uma opção: '))
+
+if computador == 0:
+
+    if jogador == 0:
+        print('Empate')
+        print('Eu escolhi Pedra e você escolheu Pedra')
+
+    elif jogador == 1:
+        print('Você ganhou!')
+        print('Eu escolhi Pedra e você escolheu Papel')
+
+    elif jogador == 2:
+        print('Você perdeu!')
+        print('Eu escolhi Pedra e você Tesoura')
+
+    else:
+        print('Jogada Inválida.')
+
+elif computador == 1: 
+
+    if jogador == 0:
+        print('Você perdeu!')
+        print('Eu escolhi Papel e você escolheu Pedra')
+
+    elif jogador == 1:
+        print('Empate')
+        print('Eu escolhi papel e você escolheu papel')
+    
+    elif jogador == 2:
+        print('Você ganhou!')
+        print('Eu escolhi Papel e você escolheu Tesoura')
+    else:
+        print('Jogada Inválida')
+
+elif computador == 2:
+
+    if jogador == 0:
+        print('Você ganhou!')
+        print('Eu escolhi Tesoura e você escolheu Pedra')
+    
+    elif jogador == 1:
+        print('Você perdeu!')
+        print('Eu escolhi Tesoura e você escolheu Papel')
+    
+    elif jogador == 2:
+        print('Empate')
+        print('Eu escolhi Tesoura e você escolheu Tesoura ')
+    
+    else:
+        print('Jogada Inválida')
