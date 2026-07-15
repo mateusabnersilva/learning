@@ -1,0 +1,7 @@
+soma = 0
+
+for i in range(3, 501, 3):
+    print(i)
+    soma = (soma + i)
+
+print('A soma dos números impares e multiplos de 3 é {}'.format(soma))

@@ -1,0 +1,9 @@
+from time import sleep
+
+print('{:=^40}'.format(' CONTAGEM REGRESSIVA COMEÇA AGORA: '))
+
+for i in range(10, -1, -1):
+    sleep(1)
+    print(i)
+print('FELIZ ANO NOVO!')
+print("\U0001F92A")
