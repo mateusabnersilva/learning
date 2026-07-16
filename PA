@@ -1,0 +1,9 @@
+# progressão artitmética 
+termo = 0
+
+p = int(input('DIGITE O PRIMEIRO TERMO: '))
+r = int(input('DIGITE A RAZÃO: '))
+
+for i in range (p, 101, r):
+    termo = termo + 1
+    print(f'O {termo}º termo é {i}')

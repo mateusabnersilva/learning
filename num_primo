@@ -1,0 +1,13 @@
+num = int(input('DIGITE UM NÚMERO: '))
+
+total = 0
+
+for i in range(1, num + 1): # 1 até o número que o usuário querer para aparecer no terminal
+    if num % i == 0: # se o num for divisivel por todo i, seja por dois e por ele mesmo
+        print(f'{i}')
+        total = total + 1
+
+if total == 2:
+    print(f'O número {num} é primo!')
+else:
+    print(f'O número {num} não é primo')
