@@ -1,0 +1,24 @@
+soma_idades = 0
+mais_velho = 0
+nome_mais_velho = ''
+mulheres_menos20 = 0
+
+for i in range(1, 5):
+    nome = str(input('DIGITE SEU NOME: '))
+    idade = int(input('DIGITE SUA IDADE: '))
+    sexo = str(input('DIGITE SEU SEXO [M/F]: ')).upper()
+
+    soma_idades += idade
+    media = soma_idades / i
+
+    if sexo == 'M':
+        if idade > mais_velho:
+            mais_velho = idade
+            nome_mais_velho = nome
+
+    if sexo == 'F' and idade < 20:
+        mulheres_menos20 += 1 
+
+print(f'A média entre os grupos é: {media:.1f}')
+print(f'O nome do homem mais velho é: {nome_mais_velho}')
+print(f'Há {mulheres_menos20} mulheres com menos de 20 anos')

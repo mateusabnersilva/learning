@@ -1,0 +1,18 @@
+maior = 0
+menor = 0
+
+for i in range(1, 6):
+    peso = float(input(f'PESO DA {i}° PESSOA: '))
+
+    if i == 1:
+        maior = peso # No primeiro digito, tanto ele será menor quanto maior
+        menor = peso # Até que alguém dê o segundo clique.
+    else:
+        if peso > maior:
+            maior = peso
+        elif peso < menor:
+            menor = peso
+print()
+
+print(f'O maior peso foi: {maior}KG')
+print(f'O menor peso é: {menor}KG')
