@@ -1,0 +1,16 @@
+s = ''
+
+while s != 'M' and s != 'F':
+    s = str(input('Sexo [M/F]: ')).upper()
+    if s != 'M' and s != 'F':
+        print('ERRO')
+
+print(f'Você digitou "{s}" ')
+
+# Versão elegante 
+'''
+
+
+
+
+'''

@@ -1,0 +1,16 @@
+from random import randint
+
+j = 0
+t = 0
+c = randint(1, 10)
+
+while j != c:
+    j = int(input('Digite um número: '))
+    print('Você errou! Tente novamente.')
+    t += 1
+
+if t < 2:
+    print(f'Parabéns! Na primeira tentativa, o jogador acertou!')
+else:
+    print(f'Poxa, você utilizou {t} tentativas')
+    print('Parabéns!')

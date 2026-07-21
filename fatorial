@@ -1,0 +1,8 @@
+n1 = int(input('Digite um valor: '))
+
+fatorial = 1
+
+while n1 > 1:
+    fatorial *= n1
+    n1 -= 1
+print(fatorial)
