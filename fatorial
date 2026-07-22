@@ -1,8 +1,32 @@
-n1 = int(input('Digite um valor: '))
+'''from math import factorial
 
-fatorial = 1
+n = int(input('Digite um número para calcular seu fatorial: '))
+f = factorial(n)
+print(f'O fatorial de {n} é {f}')
+'''
+#Versão sem macetes
 
-while n1 > 1:
-    fatorial *= n1
-    n1 -= 1
-print(fatorial)
+'''n = int(input('Digite um número para calcular seu fatorial: '))
+c = n
+f = 1
+print(f'Calculando {n}!')
+while c > 0:
+    print(f'{c}')
+    print('x' if c > 1 else '=')
+    f *= c
+    c -= 1
+print(f'{f}')
+
+'''
+
+#Usando for
+
+n = int(input('DIGITE O VALOR FATORIAL: '))
+f = 1
+print(f'Fatoriando {n}!')
+
+for i in range(n, 0, -1):
+    print(i)
+    print('x' if i > 1 else '=')
+    f *= i
+print(f)

@@ -1,0 +1,23 @@
+from time import sleep
+
+print('GERADOR DE PA')
+print('-=' * 10)
+
+n = int(input('Digite um número: '))
+r = int(input('Digite a razão: '))
+
+t = n
+pa = 0 
+total = 0
+mais = 10
+while mais != 0:
+    total += mais
+    while pa != total:
+        print()
+        t += r
+        pa += 1
+        print(f'O {pa}° termo da PA é {t}')
+
+    sleep(1)
+    mais = int(input('Quantos números mais você quer? '))
+print(f'Progressão finalizada com {total} termos')

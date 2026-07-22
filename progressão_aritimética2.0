@@ -1,0 +1,11 @@
+n = int(input('Digite um número: '))
+r = int(input('Digite a razão: '))
+
+t = n
+pa = 0 
+
+while pa != 10:
+    print()
+    t += r
+    pa += 1
+    print(f'O {pa}° termo da PA é {t}')

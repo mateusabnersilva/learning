@@ -9,8 +9,14 @@ print(f'Você digitou "{s}" ')
 
 # Versão elegante 
 '''
+s = ''
 
+while s not in 'MF':  
+    s = str(input('Sexo[M/F]: '))
+    if s not in 'MF':
+        print('ERROR')
 
+print(f'Você digitou "{s}" ')
 
 
 '''

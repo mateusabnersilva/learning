@@ -1,0 +1,4 @@
+v = 0
+
+while v == 999:
+    r = int(input('DIGITE VÁRIOS VALORES: '))
