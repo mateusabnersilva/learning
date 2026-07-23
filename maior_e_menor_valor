@@ -10,7 +10,7 @@ while resp != 'N':
     media = soma / cont
 
     if cont == 1:
-        maior = menor = n
+        maior = menor = 0
     else:
         if n > maior:
             maior = n
