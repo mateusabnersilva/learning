@@ -1,4 +1,10 @@
-v = 0
+v = int(input('DIGITE UM NÚMERO: '))
+s = 0
+vs = 0
 
-while v == 999:
-    r = int(input('DIGITE VÁRIOS VALORES: '))
+while v != 999:
+    s += v
+    vs += 1
+    v = int(input('DIGITE UM NÚMERO: '))
+    
+print(f'Você digitou {vs} números e a soma de todos eles é {s}')

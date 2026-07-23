@@ -1,0 +1,22 @@
+soma = cont = media = maior = menor = 0
+resp = ''
+
+while resp != 'N':
+    n = int(input('DIGITE UM NÚMERO: '))
+    resp = str(input('DESEJA CONTINUAR? [S/N]')).upper()
+
+    soma += n 
+    cont += 1
+    media = soma / cont
+
+    if cont == 1:
+        maior = menor = n
+    else:
+        if n > maior:
+            maior = n
+        if n < menor:
+            menor = n
+
+print(f'Você digitou {cont} termos e a soma de todos eles é: {soma}')
+print(f'A média de todos eles é: {media}')
+print(f'O maior é: {maior} e o menor é: {menor}')
