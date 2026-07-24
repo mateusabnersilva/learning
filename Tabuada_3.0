@@ -1,0 +1,13 @@
+n = c = f = 0
+
+while n != 10:
+    n = int(input('Qual número da tabuada você qur saber? '))
+    if n == -1:
+        break
+    f *= n
+    c += 1
+
+print(f'{f} x {c} = {f * c}')
+
+
+
